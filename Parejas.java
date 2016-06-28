@@ -42,7 +42,19 @@ public class Parejas
        parejas.add("González Álvarez, David");                  
        parejas.add("Melcón Diez, Víctor");          
     }
-
+    
+    /**
+     * mt para añadir un nuevo alumno a la colección.
+     */
+    public void setAlumno(String alumno){
+        parejas.add(alumno);
+    }
+    /**
+     * mt para eliminar un nuevo alumno a la colección.
+     */
+    public void eliminar(String alumno){
+        parejas.remove(alumno);
+    }
     /**
      * mt para mostrar por pantalla el nombre de todos los alumnos.
      */
