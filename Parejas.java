@@ -84,7 +84,29 @@ public class Parejas
             System.out.println("Error, el nº " +index+ " no es válido, ha de estar entre 1 y " +parejas.size() + ".");
         }
     }
-
+    
+    /**
+     * mt para conseguir un número identificativo único de 4 cifras
+     */
+    public String setNumId(int id){
+        String sol = "";
+        if(id > 0 && id < 1000){
+            if(id < 1000 ){
+                sol = "0" +id;
+            }
+            if(id < 100){
+               sol = "00" +id;
+            }
+            if(id < 10){
+                sol = "000" +id;
+            }
+        }
+        else{
+            System.out.println("Error, el id ha de estar entre 0 y 1000");
+        }
+        return sol;
+    }
+    
     /**
      * mt para mostrar por pantalla el nombre de todos las parejas.
      * Se pide en esta actividad que crees un nuevo proyecto que empareje a los alumnos de la clase de forma aleatoria
