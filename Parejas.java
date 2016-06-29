@@ -121,7 +121,7 @@ public class Parejas
         
         String nombre = ""; //VL para almacenar el nombre de cada alumno.
         int cont = 0;
-        int cont2 = 0;
+        int cont2 = 1;
         
         while(it.hasNext()){//mientras haya elementos en la VL it, sin recorrer....
             nombre = it.next();//cada uno de ellos se almacenará en la VL nombre.
@@ -129,15 +129,14 @@ public class Parejas
             
             if(cont == 0){
                 System.out.println();
-                System.out.println("Pareja " +cont2+ " formada por: ");
-                cont2++;
+                System.out.println("Pareja " +setNumId(cont2)+ " formada por: ");
+                 cont2++;
             }
             System.out.println(nombre);
             cont ++;
             if(cont == 2 && copia.size() > 1){
                 cont = 0;
             }
-            
         }
         System.out.println();
         
